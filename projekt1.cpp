@@ -2,6 +2,22 @@
 
 using namespace std;
 
+void czyPierwsza(int a) {
+	if (a == 0 || a == 1) {
+		cout << "Liczba nie jest pierwsza" << endl;
+		return;
+	}
+	
+	for (int i = 2; i <= a/2; i++) {
+		if (a % i == 0) {
+			cout << "Liczba nie jest pierwsza" << endl;
+			return; 
+		}
+	}
+
+	cout << "Liczba jest pierwsza" << endl;
+}
+
 int main() {
     int a, b;
     cout << "Podaj liczbe calkowita ";
