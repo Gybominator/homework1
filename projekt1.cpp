@@ -29,7 +29,21 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+	cout << "2. Czy liczba jest pierwsza" << endl;
         cin >> wyjscie;
+	switch (wyjscie) {
+		case 0: 
+			break;
+		case 2:
+			int a;
+			cout << "Podaj liczbe naturalna: ";
+			cin >> a;
+			czyPierwsza(a); 
+			break;
+		default:
+			cout << "Zly wybor" << endl;
+			break;
+	}
     } while(wyjscie != 0);
     return 0;
 }
